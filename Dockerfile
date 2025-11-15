@@ -25,13 +25,13 @@ RUN curl -sSL https://install.python-poetry.org | python3 - \
     && ln -s /root/.local/bin/poetry /usr/local/bin/poetry
 
 # Copy Poetry configuration files
-COPY pyproject.toml ./
+COPY pyproject.toml README.md ./
 
 # Configure Poetry to not create virtual environment (we're in a container)
 RUN poetry config virtualenvs.create false
 
 # Install Python dependencies (without development dependencies)
-RUN poetry install --only main --no-interaction --no-ansi
+RUN poetry install --only main --no-interaction --no-ansi --no-root
 
 # Export dependencies to requirements.txt for future use if needed
 RUN poetry export -f requirements.txt --output requirements.txt --without-hashes --only main
