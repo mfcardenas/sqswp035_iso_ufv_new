@@ -33,9 +33,6 @@ RUN poetry config virtualenvs.create false
 # Install Python dependencies (without development dependencies)
 RUN poetry install --only main --no-interaction --no-ansi --no-root
 
-# Export dependencies to requirements.txt for future use if needed
-RUN poetry export -f requirements.txt --output requirements.txt --without-hashes --only main
-
 # ============================================
 # Stage 2: Runtime - Create final image
 # ============================================
