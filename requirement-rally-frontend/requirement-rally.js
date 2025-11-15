@@ -128,9 +128,13 @@ const translations = {
     }
 };
 
+// Configuration
+const API_BASE_URL = window.CONFIG ? window.CONFIG.API.BASE_URL : '';
+
 class RequirementRallyGame {
     constructor() {
-        this.apiUrl = 'http://127.0.0.1:8001';
+        // this.apiUrl = 'http://127.0.0.1:8001';
+        this.apiUrl = API_BASE_URL;
         this.sessionId = null;
         this.currentScenario = null;
         this.score = 0;
