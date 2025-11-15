@@ -30,11 +30,11 @@ COPY pyproject.toml ./
 # Configure Poetry to not create virtual environment (we're in a container)
 RUN poetry config virtualenvs.create false
 
-# Install Python dependencies
-RUN poetry install --no-dev --no-interaction --no-ansi
+# Install Python dependencies (without development dependencies)
+RUN poetry install --only main --no-interaction --no-ansi
 
 # Export dependencies to requirements.txt for future use if needed
-RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
+RUN poetry export -f requirements.txt --output requirements.txt --without-hashes --only main
 
 # ============================================
 # Stage 2: Runtime - Create final image
