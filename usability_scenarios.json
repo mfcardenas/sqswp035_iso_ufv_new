@@ -1,0 +1,291 @@
+{
+  "game_info": {
+    "name": "UsabilityUniverse",
+    "description": "Learn to identify usability principles in real-world interface scenarios",
+    "version": "1.0.0",
+    "categories": [
+      {
+        "id": "Learnability",
+        "name": "Learnability",
+        "description": "How easily users can learn to use the interface",
+        "description_es": "Qué tan fácil es para los usuarios aprender a usar la interfaz"
+      },
+      {
+        "id": "Efficiency", 
+        "name": "Efficiency",
+        "description": "How quickly users can perform tasks once they learn the interface",
+        "description_es": "Qué tan rápido pueden los usuarios realizar tareas una vez que aprenden la interfaz"
+      },
+      {
+        "id": "Memorability",
+        "name": "Memorability", 
+        "description": "How easily users can remember how to use the interface",
+        "description_es": "Qué tan fácil es para los usuarios recordar cómo usar la interfaz"
+      },
+      {
+        "id": "Error_Prevention",
+        "name": "Error Prevention",
+        "description": "How well the interface prevents user errors",
+        "description_es": "Qué tan bien la interfaz previene errores del usuario"
+      },
+      {
+        "id": "User_Satisfaction",
+        "name": "User Satisfaction",
+        "description": "How pleasant and satisfying the interface is to use",
+        "description_es": "Qué tan agradable y satisfactoria es la interfaz de usar"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "usability_001",
+      "content": "A new user opens a photo editing app for the first time. They immediately see familiar icons like scissors for cut, a folder for open file, and a diskette for save. Within minutes, they successfully edit and save their first photo.",
+      "content_es": "Un nuevo usuario abre una aplicación de edición de fotos por primera vez. Inmediatamente ve íconos familiares como tijeras para cortar, una carpeta para abrir archivo y un disquete para guardar. En minutos, logra editar y guardar su primera foto.",
+      "category": "Learnability",
+      "difficulty": "easy",
+      "correct_answer": "Learnability",
+      "feedback": "This scenario demonstrates good learnability through familiar icons and intuitive interface design that allows new users to quickly understand how to use the application.",
+      "feedback_es": "Este escenario demuestra buena facilidad de aprendizaje a través de íconos familiares y diseño de interfaz intuitivo que permite a nuevos usuarios entender rápidamente cómo usar la aplicación."
+    },
+    {
+      "id": "usability_002", 
+      "content": "An experienced user of a project management tool can create a new project, assign team members, and set deadlines using keyboard shortcuts in under 30 seconds, compared to 2 minutes when they first started using the tool.",
+      "content_es": "Un usuario experimentado de una herramienta de gestión de proyectos puede crear un nuevo proyecto, asignar miembros del equipo y establecer fechas límite usando atajos de teclado en menos de 30 segundos, comparado con 2 minutos cuando comenzó a usar la herramienta.",
+      "category": "Efficiency",
+      "difficulty": "medium",
+      "correct_answer": "Efficiency",
+      "feedback": "This scenario illustrates efficiency - how expert users can perform tasks quickly through advanced features like keyboard shortcuts once they've mastered the interface.",
+      "feedback_es": "Este escenario ilustra eficiencia - cómo los usuarios expertos pueden realizar tareas rápidamente a través de características avanzadas como atajos de teclado una vez que han dominado la interfaz."
+    },
+    {
+      "id": "usability_003",
+      "content": "A user returns to a banking website after 3 months of not using it. Despite the time gap, they remember that the 'Transfer Money' option is in the top navigation menu and successfully complete a transfer without having to relearn the interface.",
+      "content_es": "Un usuario regresa a un sitio web bancario después de 3 meses sin usarlo. A pesar del tiempo transcurrido, recuerda que la opción 'Transferir Dinero' está en el menú de navegación superior y completa exitosamente una transferencia sin tener que reaprender la interfaz.",
+      "category": "Memorability",
+      "difficulty": "medium",
+      "correct_answer": "Memorability",
+      "feedback": "This scenario demonstrates good memorability - the interface design is memorable enough that users can recall how to use it even after extended periods of non-use.",
+      "feedback_es": "Este escenario demuestra buena memorabilidad - el diseño de la interfaz es lo suficientemente memorable para que los usuarios puedan recordar cómo usarla incluso después de períodos prolongados sin uso."
+    },
+    {
+      "id": "usability_004",
+      "content": "An e-commerce website shows a confirmation dialog when users click 'Delete Item' from their cart, asking 'Are you sure you want to remove this item?' with clear 'Yes, Remove' and 'Cancel' buttons. This prevents accidental deletions.",
+      "content_es": "Un sitio web de comercio electrónico muestra un diálogo de confirmación cuando los usuarios hacen clic en 'Eliminar Artículo' de su carrito, preguntando '¿Estás seguro de que quieres eliminar este artículo?' con botones claros 'Sí, Eliminar' y 'Cancelar'. Esto previene eliminaciones accidentales.",
+      "category": "Error_Prevention",
+      "difficulty": "easy",
+      "correct_answer": "Error_Prevention",
+      "feedback": "This scenario shows good error prevention through confirmation dialogs that give users a chance to reconsider potentially destructive actions.",
+      "feedback_es": "Este escenario muestra buena prevención de errores a través de diálogos de confirmación que dan a los usuarios una oportunidad de reconsiderar acciones potencialmente destructivas."
+    },
+    {
+      "id": "usability_005",
+      "content": "A music streaming app uses smooth animations, beautiful album artwork, and provides instant feedback when users like songs. Users report feeling happy and engaged while using the app, often spending more time than intended browsing music.",
+      "content_es": "Una aplicación de streaming de música usa animaciones suaves, hermosas portadas de álbumes y proporciona retroalimentación instantánea cuando los usuarios dan like a canciones. Los usuarios reportan sentirse felices y comprometidos mientras usan la app, a menudo pasando más tiempo del previsto navegando música.",
+      "category": "User_Satisfaction",
+      "difficulty": "medium",
+      "correct_answer": "User_Satisfaction",
+      "feedback": "This scenario illustrates high user satisfaction through pleasant visual design, smooth interactions, and positive emotional responses that encourage continued use.",
+      "feedback_es": "Este escenario ilustra alta satisfacción del usuario a través de diseño visual agradable, interacciones fluidas y respuestas emocionales positivas que fomentan el uso continuado."
+    },
+    {
+      "id": "usability_006",
+      "content": "A restaurant ordering app groups menu items by category (Appetizers, Main Courses, Desserts) with clear icons and descriptions. First-time users can easily navigate and place their first order without any tutorial or help.",
+      "content_es": "Una aplicación para ordenar comida de restaurante agrupa elementos del menú por categoría (Aperitivos, Platos Principales, Postres) con íconos claros y descripciones. Los usuarios primerizos pueden navegar fácilmente y hacer su primer pedido sin ningún tutorial o ayuda.",
+      "category": "Learnability",
+      "difficulty": "easy",
+      "correct_answer": "Learnability",
+      "feedback": "This demonstrates excellent learnability through logical organization, clear categorization, and intuitive design that requires no additional instruction.",
+      "feedback_es": "Esto demuestra excelente facilidad de aprendizaje a través de organización lógica, categorización clara y diseño intuitivo que no requiere instrucción adicional."
+    },
+    {
+      "id": "usability_007",
+      "content": "A code editor allows experienced developers to perform complex operations like 'find and replace across all files' using a simple keyboard combination (Ctrl+Shift+H), saving significant time compared to using menus.",
+      "content_es": "Un editor de código permite a desarrolladores experimentados realizar operaciones complejas como 'buscar y reemplazar en todos los archivos' usando una simple combinación de teclado (Ctrl+Shift+H), ahorrando tiempo significativo comparado con usar menús.",
+      "category": "Efficiency",
+      "difficulty": "hard",
+      "correct_answer": "Efficiency",
+      "feedback": "This shows efficiency optimization for expert users through powerful keyboard shortcuts that dramatically reduce the time needed for complex operations.",
+      "feedback_es": "Esto muestra optimización de eficiencia para usuarios expertos a través de poderosos atajos de teclado que reducen dramáticamente el tiempo necesario para operaciones complejas."
+    },
+    {
+      "id": "usability_008",
+      "content": "A user hasn't logged into their email client for 6 months. When they return, they immediately remember that the compose button is the large blue button in the top left, and the search bar is prominently displayed at the top.",
+      "content_es": "Un usuario no ha iniciado sesión en su cliente de correo por 6 meses. Cuando regresa, inmediatamente recuerda que el botón de redactar es el botón azul grande en la esquina superior izquierda, y la barra de búsqueda está prominentemente mostrada en la parte superior.",
+      "category": "Memorability",
+      "difficulty": "easy",
+      "correct_answer": "Memorability",
+      "feedback": "This illustrates strong memorability through distinctive visual elements and consistent placement that make the interface memorable even after long periods of non-use.",
+      "feedback_es": "Esto ilustra fuerte memorabilidad a través de elementos visuales distintivos y ubicación consistente que hacen la interfaz memorable incluso después de largos períodos sin uso."
+    },
+    {
+      "id": "usability_009",
+      "content": "A form validates email addresses in real-time as users type, showing a green checkmark for valid emails and a red 'X' with helpful text like 'Please include @' for invalid ones. This prevents submission errors.",
+      "content_es": "Un formulario valida direcciones de correo en tiempo real mientras los usuarios escriben, mostrando una marca verde para correos válidos y una 'X' roja con texto útil como 'Por favor incluye @' para inválidos. Esto previene errores de envío.",
+      "category": "Error_Prevention",
+      "difficulty": "medium",
+      "correct_answer": "Error_Prevention",
+      "feedback": "This demonstrates proactive error prevention through real-time validation and helpful feedback that guides users toward correct input before they can make mistakes.",
+      "feedback_es": "Esto demuestra prevención proactiva de errores a través de validación en tiempo real y retroalimentación útil que guía a los usuarios hacia entrada correcta antes de que puedan cometer errores."
+    },
+    {
+      "id": "usability_010",
+      "content": "A fitness tracking app celebrates user achievements with colorful animations, encouraging messages, and social sharing options. Users frequently mention feeling motivated and proud when using the app.",
+      "content_es": "Una aplicación de seguimiento físico celebra los logros del usuario con animaciones coloridas, mensajes alentadores y opciones de compartir en redes sociales. Los usuarios frecuentemente mencionan sentirse motivados y orgullosos al usar la app.",
+      "category": "User_Satisfaction",
+      "difficulty": "easy",
+      "correct_answer": "User_Satisfaction",
+      "feedback": "This exemplifies high user satisfaction through positive reinforcement, emotional engagement, and features that make users feel good about their accomplishments.",
+      "feedback_es": "Esto ejemplifica alta satisfacción del usuario a través de refuerzo positivo, compromiso emocional y características que hacen que los usuarios se sientan bien sobre sus logros."
+    },
+    {
+      "id": "usability_011",
+      "content": "A beginner uses a design tool for the first time. The tool provides an interactive tutorial with tooltips that appear next to each feature as they use it, making it easy to learn without feeling overwhelmed.",
+      "content_es": "Un principiante usa una herramienta de diseño por primera vez. La herramienta proporciona un tutorial interactivo con información que aparece junto a cada característica mientras la usa, haciendo fácil aprender sin sentirse abrumado.",
+      "category": "Learnability",
+      "difficulty": "medium",
+      "correct_answer": "Learnability",
+      "feedback": "This shows excellent learnability through progressive disclosure and contextual help that guides new users without overwhelming them with information.",
+      "feedback_es": "Esto muestra excelente facilidad de aprendizaje a través de revelación progresiva y ayuda contextual que guía a nuevos usuarios sin abrumarlos con información."
+    },
+    {
+      "id": "usability_012",
+      "content": "An expert user of a spreadsheet application can create complex formulas, format cells, and generate charts using only keyboard shortcuts and function keys, completing tasks in a fraction of the time it takes using menus.",
+      "content_es": "Un usuario experto de una aplicación de hoja de cálculo puede crear fórmulas complejas, formatear celdas y generar gráficos usando solo atajos de teclado y teclas de función, completando tareas en una fracción del tiempo que toma usar menús.",
+      "category": "Efficiency",
+      "difficulty": "hard",
+      "correct_answer": "Efficiency",
+      "feedback": "This demonstrates peak efficiency where expert users can leverage advanced features to perform complex tasks much faster than novice approaches.",
+      "feedback_es": "Esto demuestra máxima eficiencia donde usuarios expertos pueden aprovechar características avanzadas para realizar tareas complejas mucho más rápido que enfoques novatos."
+    },
+    {
+      "id": "usability_013",
+      "content": "A social media platform keeps its core navigation (Home, Search, Profile) in the same location for years. Users who return after long breaks can immediately find what they need without relearning the interface layout.",
+      "content_es": "Una plataforma de redes sociales mantiene su navegación principal (Inicio, Búsqueda, Perfil) en la misma ubicación durante años. Los usuarios que regresan después de largos descansos pueden encontrar inmediatamente lo que necesitan sin reaprender el diseño de la interfaz.",
+      "category": "Memorability",
+      "difficulty": "hard",
+      "correct_answer": "Memorability",
+      "feedback": "This illustrates strategic memorability through consistent interface elements that create strong mental models users can rely on over time.",
+      "feedback_es": "Esto ilustra memorabilidad estratégica a través de elementos de interfaz consistentes que crean modelos mentales fuertes en los que los usuarios pueden confiar a lo largo del tiempo."
+    },
+    {
+      "id": "usability_014",
+      "content": "A file upload interface prevents users from uploading files larger than 10MB by disabling the upload button and showing 'File too large (max 10MB)' message immediately after file selection, before any upload attempt.",
+      "content_es": "Una interfaz de carga de archivos previene que los usuarios suban archivos más grandes de 10MB deshabilitando el botón de carga y mostrando mensaje 'Archivo muy grande (máx 10MB)' inmediatamente después de la selección de archivo, antes de cualquier intento de carga.",
+      "category": "Error_Prevention",
+      "difficulty": "hard",
+      "correct_answer": "Error_Prevention",
+      "feedback": "This shows sophisticated error prevention by checking constraints before allowing actions and providing clear feedback about limitations.",
+      "feedback_es": "Esto muestra prevención sofisticada de errores al verificar restricciones antes de permitir acciones y proporcionar retroalimentación clara sobre limitaciones."
+    },
+    {
+      "id": "usability_015",
+      "content": "A meditation app uses calming colors, gentle sounds, and smooth transitions between screens. Users report feeling relaxed and peaceful while using the app, often describing it as their 'digital sanctuary'.",
+      "content_es": "Una aplicación de meditación usa colores calmantes, sonidos suaves y transiciones fluidas entre pantallas. Los usuarios reportan sentirse relajados y en paz mientras usan la app, a menudo describiéndola como su 'santuario digital'.",
+      "category": "User_Satisfaction",
+      "difficulty": "hard",
+      "correct_answer": "User_Satisfaction",
+      "feedback": "This demonstrates how thoughtful design choices in aesthetics and interaction can create strong emotional connections and positive user experiences.",
+      "feedback_es": "Esto demuestra cómo las decisiones de diseño cuidadosas en estética e interacción pueden crear conexiones emocionales fuertes y experiencias positivas del usuario."
+    },
+    {
+      "id": "usability_016",
+      "content": "A language learning app introduces new grammar concepts by showing simple examples first, then gradually adding complexity. New users can start speaking basic sentences within the first lesson without feeling overwhelmed.",
+      "content_es": "Una aplicación de aprendizaje de idiomas introduce nuevos conceptos gramaticales mostrando ejemplos simples primero, luego gradualmente añadiendo complejidad. Los nuevos usuarios pueden comenzar a hablar oraciones básicas en la primera lección sin sentirse abrumados.",
+      "category": "Learnability",
+      "difficulty": "medium",
+      "correct_answer": "Learnability",
+      "feedback": "This showcases excellent learnability through progressive complexity and scaffolded learning that builds user confidence gradually.",
+      "feedback_es": "Esto muestra excelente facilidad de aprendizaje a través de complejidad progresiva y aprendizaje estructurado que construye la confianza del usuario gradualmente."
+    },
+    {
+      "id": "usability_017",
+      "content": "A video game controller layout follows established conventions - left stick for movement, right stick for camera, triggers for actions. New players can immediately start playing without learning the controls.",
+      "content_es": "El diseño de un control de videojuego sigue convenciones establecidas - palanca izquierda para movimiento, palanca derecha para cámara, gatillos para acciones. Los nuevos jugadores pueden comenzar a jugar inmediatamente sin aprender los controles.",
+      "category": "Learnability",
+      "difficulty": "easy",
+      "correct_answer": "Learnability",
+      "feedback": "This demonstrates learnability through adherence to established conventions and standards that users already know from other contexts.",
+      "feedback_es": "Esto demuestra facilidad de aprendizaje a través de adherencia a convenciones y estándares establecidos que los usuarios ya conocen de otros contextos."
+    },
+    {
+      "id": "usability_018",
+      "content": "A project management tool allows users to complete common tasks like creating tasks, assigning deadlines, and updating status through drag-and-drop actions and single-click operations, reducing multi-step workflows.",
+      "content_es": "Una herramienta de gestión de proyectos permite a los usuarios completar tareas comunes como crear tareas, asignar fechas límite y actualizar estado a través de acciones de arrastrar y soltar y operaciones de un clic, reduciendo flujos de trabajo de múltiples pasos.",
+      "category": "Efficiency",
+      "difficulty": "medium",
+      "correct_answer": "Efficiency",
+      "feedback": "This shows efficiency improvements through streamlined interactions that minimize the number of steps required for common operations.",
+      "feedback_es": "Esto muestra mejoras de eficiencia a través de interacciones optimizadas que minimizan el número de pasos requeridos para operaciones comunes."
+    },
+    {
+      "id": "usability_019",
+      "content": "A code editor provides intelligent autocomplete that learns from the user's coding patterns and suggests complete functions after typing just a few characters, dramatically speeding up development time.",
+      "content_es": "Un editor de código proporciona autocompletado inteligente que aprende de los patrones de codificación del usuario y sugiere funciones completas después de escribir solo unos pocos caracteres, acelerando dramáticamente el tiempo de desarrollo.",
+      "category": "Efficiency",
+      "difficulty": "hard",
+      "correct_answer": "Efficiency",
+      "feedback": "This demonstrates advanced efficiency through AI-powered assistance that adapts to user behavior and accelerates expert workflows.",
+      "feedback_es": "Esto demuestra eficiencia avanzada a través de asistencia potenciada por IA que se adapta al comportamiento del usuario y acelera flujos de trabajo expertos."
+    },
+    {
+      "id": "usability_020",
+      "content": "A banking app uses the same color scheme, button placement, and navigation structure across all its mobile and web versions. Customers switching between devices never feel lost or confused.",
+      "content_es": "Una aplicación bancaria usa el mismo esquema de colores, ubicación de botones y estructura de navegación en todas sus versiones móviles y web. Los clientes que cambian entre dispositivos nunca se sienten perdidos o confundidos.",
+      "category": "Memorability",
+      "difficulty": "medium",
+      "correct_answer": "Memorability",
+      "feedback": "This illustrates cross-platform memorability through consistent design patterns that create unified mental models across different devices.",
+      "feedback_es": "Esto ilustra memorabilidad multiplataforma a través de patrones de diseño consistentes que crean modelos mentales unificados en diferentes dispositivos."
+    },
+    {
+      "id": "usability_021",
+      "content": "A recipe app maintains the same folder structure and search functionality it had five years ago. Users who haven't opened it in months can immediately find their saved recipes in the expected locations.",
+      "content_es": "Una aplicación de recetas mantiene la misma estructura de carpetas y funcionalidad de búsqueda que tenía hace cinco años. Los usuarios que no la han abierto en meses pueden encontrar inmediatamente sus recetas guardadas en las ubicaciones esperadas.",
+      "category": "Memorability",
+      "difficulty": "hard",
+      "correct_answer": "Memorability",
+      "feedback": "This shows long-term memorability through stable interface patterns that remain consistent over extended periods of non-use.",
+      "feedback_es": "Esto muestra memorabilidad a largo plazo a través de patrones de interfaz estables que permanecen consistentes durante períodos extendidos de no uso."
+    },
+    {
+      "id": "usability_022",
+      "content": "An online shopping site validates credit card numbers in real-time as users type, showing a green checkmark for valid formats and red warning for invalid ones, preventing submission errors before they happen.",
+      "content_es": "Un sitio de compras en línea valida números de tarjeta de crédito en tiempo real mientras los usuarios escriben, mostrando una marca verde para formatos válidos y advertencia roja para inválidos, previniendo errores de envío antes de que ocurran.",
+      "category": "Error_Prevention",
+      "difficulty": "medium",
+      "correct_answer": "Error_Prevention",
+      "feedback": "This demonstrates proactive error prevention through real-time validation that guides users toward correct input before errors occur.",
+      "feedback_es": "Esto demuestra prevención proactiva de errores a través de validación en tiempo real que guía a los usuarios hacia entrada correcta antes de que ocurran errores."
+    },
+    {
+      "id": "usability_023",
+      "content": "A photo editing app automatically saves progress every few seconds and warns users with 'Unsaved changes will be lost' before closing. Users never lose work due to accidental closure or system crashes.",
+      "content_es": "Una aplicación de edición de fotos guarda automáticamente el progreso cada pocos segundos y advierte a los usuarios con 'Los cambios no guardados se perderán' antes de cerrar. Los usuarios nunca pierden trabajo debido a cierre accidental o fallas del sistema.",
+      "category": "Error_Prevention",
+      "difficulty": "hard",
+      "correct_answer": "Error_Prevention",
+      "feedback": "This shows comprehensive error prevention through automatic safeguards and clear warnings that protect users from data loss scenarios.",
+      "feedback_es": "Esto muestra prevención integral de errores a través de salvaguardas automáticas y advertencias claras que protegen a los usuarios de escenarios de pérdida de datos."
+    },
+    {
+      "id": "usability_024",
+      "content": "A music streaming app responds instantly to user interactions with smooth animations and provides rich visual feedback. Users describe it as 'a joy to use' and 'feels alive under my fingers'.",
+      "content_es": "Una aplicación de streaming de música responde instantáneamente a las interacciones del usuario con animaciones suaves y proporciona retroalimentación visual rica. Los usuarios la describen como 'un placer usar' y 'se siente viva bajo mis dedos'.",
+      "category": "User_Satisfaction",
+      "difficulty": "medium",
+      "correct_answer": "User_Satisfaction",
+      "feedback": "This exemplifies user satisfaction through responsive interactions and delightful micro-animations that create an emotionally engaging experience.",
+      "feedback_es": "Esto ejemplifica satisfacción del usuario a través de interacciones responsivas y micro-animaciones deliciosas que crean una experiencia emocionalmente atractiva."
+    },
+    {
+      "id": "usability_025",
+      "content": "A fitness app celebrates user achievements with personalized congratulatory messages, fun sound effects, and colorful badges. Users report feeling motivated and accomplished, with many saying it 'makes working out fun'.",
+      "content_es": "Una aplicación de fitness celebra logros del usuario con mensajes de felicitación personalizados, efectos de sonido divertidos y insignias coloridas. Los usuarios reportan sentirse motivados y realizados, con muchos diciendo que 'hace divertido el ejercicio'.",
+      "category": "User_Satisfaction",
+      "difficulty": "hard",
+      "correct_answer": "User_Satisfaction",
+      "feedback": "This demonstrates user satisfaction through gamification and positive reinforcement that creates emotional investment and intrinsic motivation.",
+      "feedback_es": "Esto demuestra satisfacción del usuario a través de gamificación y refuerzo positivo que crea inversión emocional y motivación intrínseca."
+    }
+  ]
+}

@@ -1,0 +1,645 @@
+{
+  "game_info": {
+    "name": "RequirementRally",
+    "version": "1.0.0",
+    "description": {
+      "en": "Educational game to practice identifying requirement types",
+      "es": "Juego educativo para practicar la identificación de tipos de requisitos"
+    },
+    "total_scenarios": 35,
+    "categories": ["Functional", "Non-Functional", "Constraint"],
+    "languages": ["en", "es"]
+  },
+  "scenarios": [
+    {
+      "id": "req_001",
+      "content": {
+        "en": "The system must allow registered users to log in using their email and password.",
+        "es": "El sistema debe permitir que los usuarios registrados puedan iniciar sesión utilizando su email y contraseña."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes a specific function that the system must perform: authenticate users through credentials.",
+        "es": "Es un requisito funcional porque describe una función específica que el sistema debe realizar: autenticar usuarios mediante credenciales."
+      },
+      "category": "Functional",
+      "difficulty": "easy"
+    },
+    {
+      "id": "req_002", 
+      "content": {
+        "en": "The system must respond to search queries in less than 2 seconds.",
+        "es": "El sistema debe responder a las consultas de búsqueda en menos de 2 segundos."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional requirement because it specifies a performance criterion (response time) that the system must meet.",
+        "es": "Es un requisito no-funcional porque especifica un criterio de rendimiento (tiempo de respuesta) que el sistema debe cumplir."
+      },
+      "category": "Non-Functional",
+      "difficulty": "easy"
+    },
+    {
+      "id": "req_003",
+      "content": {
+        "en": "The development team must use only open-source libraries and frameworks.",
+        "es": "El equipo de desarrollo debe usar únicamente librerías y frameworks de código abierto."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a constraint because it limits the technology choices for the project, not system functionality.",
+        "es": "Es una restricción porque limita las opciones tecnológicas del proyecto, no la funcionalidad del sistema."
+      },
+      "category": "Constraint",
+      "difficulty": "easy"
+    },
+    {
+      "id": "req_004",
+      "content": {
+        "en": "Users must be able to generate monthly expense reports in PDF format.",
+        "es": "Los usuarios deben poder generar reportes mensuales de gastos en formato PDF."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes a specific feature the system must provide to users.",
+        "es": "Es un requisito funcional porque describe una característica específica que el sistema debe proporcionar a los usuarios."
+      },
+      "category": "Functional",
+      "difficulty": "easy"
+    },
+    {
+      "id": "req_005",
+      "content": {
+        "en": "The system must be available 99.9% of the time during business hours.",
+        "es": "El sistema debe estar disponible el 99.9% del tiempo durante las horas laborales."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional availability requirement that specifies a service level the system must maintain.",
+        "es": "Es un requisito no-funcional de disponibilidad que especifica un nivel de servicio que el sistema debe mantener."
+      },
+      "category": "Non-Functional",
+      "difficulty": "easy"
+    },
+    {
+      "id": "req_006",
+      "content": {
+        "en": "The project budget cannot exceed $500,000 for the first year.",
+        "es": "El presupuesto del proyecto no puede exceder $500,000 para el primer año."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a constraint because it establishes a financial limitation for the project, not system behavior.",
+        "es": "Es una restricción porque establece una limitación financiera para el proyecto, no el comportamiento del sistema."
+      },
+      "category": "Constraint",
+      "difficulty": "easy"
+    },
+    {
+      "id": "req_007",
+      "content": {
+        "en": "Users must be able to filter products by category, price, and brand.",
+        "es": "Los usuarios deben poder filtrar productos por categoría, precio y marca."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes specific filtering functions that the system must provide to users.",
+        "es": "Es un requisito funcional porque describe funciones específicas de filtrado que el sistema debe proporcionar a los usuarios."
+      },
+      "category": "Functional",
+      "difficulty": "easy"
+    },
+    {
+      "id": "req_008",
+      "content": {
+        "en": "All user passwords must be encrypted using SHA-256 algorithm.",
+        "es": "Todas las contraseñas de usuario deben ser encriptadas usando el algoritmo SHA-256."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional security requirement that specifies how data must be protected, not what the system does.",
+        "es": "Es un requisito no-funcional de seguridad que especifica cómo deben protegerse los datos, no qué hace el sistema."
+      },
+      "category": "Non-Functional",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_009",
+      "content": {
+        "en": "The development team must deliver a beta version within 3 months.",
+        "es": "El equipo de desarrollo debe entregar una versión beta en 3 meses."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a project time constraint that establishes delivery deadlines, not system functionality.",
+        "es": "Es una restricción temporal del proyecto que establece plazos de entrega, no funcionalidad del sistema."
+      },
+      "category": "Constraint",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_010",
+      "content": {
+        "en": "The system must send email notifications when new orders are placed.",
+        "es": "El sistema debe enviar notificaciones por email cuando se realicen nuevos pedidos."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes a specific behavior the system must perform when certain events occur.",
+        "es": "Es un requisito funcional porque describe un comportamiento específico que el sistema debe realizar cuando ocurren ciertos eventos."
+      },
+      "category": "Functional",
+      "difficulty": "easy"
+    },
+    {
+      "id": "req_011",
+      "content": {
+        "en": "The system must support up to 10,000 concurrent users without performance degradation.",
+        "es": "El sistema debe soportar hasta 10,000 usuarios concurrentes sin degradación del rendimiento."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional performance requirement that specifies capacity and scalability criteria.",
+        "es": "Es un requisito no-funcional de rendimiento que especifica criterios de capacidad y escalabilidad."
+      },
+      "category": "Non-Functional",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_012",
+      "content": {
+        "en": "The application must be compatible with Internet Explorer 11 and newer browsers.",
+        "es": "La aplicación debe ser compatible con Internet Explorer 11 y navegadores más nuevos."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a technology constraint that limits the platforms and browsers the system must support.",
+        "es": "Es una restricción tecnológica que limita las plataformas y navegadores que el sistema debe soportar."
+      },
+      "category": "Constraint",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_013",
+      "content": {
+        "en": "Users must be able to export data in CSV, Excel, and JSON formats.",
+        "es": "Los usuarios deben poder exportar datos en formatos CSV, Excel y JSON."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes specific export capabilities the system must provide.",
+        "es": "Es un requisito funcional porque describe capacidades específicas de exportación que el sistema debe proporcionar."
+      },
+      "category": "Functional",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_014",
+      "content": {
+        "en": "The user interface must be intuitive for users with minimal technical knowledge.",
+        "es": "La interfaz de usuario debe ser intuitiva para usuarios con conocimientos técnicos mínimos."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional usability requirement that defines quality attributes for the user interface.",
+        "es": "Es un requisito no-funcional de usabilidad que define atributos de calidad para la interfaz de usuario."
+      },
+      "category": "Non-Functional",
+      "difficulty": "hard"
+    },
+    {
+      "id": "req_015",
+      "content": {
+        "en": "All development work must be completed using Agile methodology with 2-week sprints.",
+        "es": "Todo el trabajo de desarrollo debe completarse usando metodología Agile con sprints de 2 semanas."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a process constraint that dictates the development methodology, not system functionality.",
+        "es": "Es una restricción de proceso que dicta la metodología de desarrollo, no la funcionalidad del sistema."
+      },
+      "category": "Constraint",
+      "difficulty": "hard"
+    },
+    {
+      "id": "req_016",
+      "content": {
+        "en": "The system must automatically backup user data every 24 hours.",
+        "es": "El sistema debe hacer respaldo automático de los datos de usuario cada 24 horas."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes a specific automated process the system must perform.",
+        "es": "Es un requisito funcional porque describe un proceso automatizado específico que el sistema debe realizar."
+      },
+      "category": "Functional",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_017",
+      "content": {
+        "en": "Database queries must not exceed 500ms execution time under normal load.",
+        "es": "Las consultas a la base de datos no deben exceder 500ms de tiempo de ejecución bajo carga normal."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional performance requirement that establishes execution time limits for database operations.",
+        "es": "Es un requisito no-funcional de rendimiento que establece límites de tiempo de ejecución para operaciones de base de datos."
+      },
+      "category": "Non-Functional",
+      "difficulty": "hard"
+    },
+    {
+      "id": "req_018",
+      "content": {
+        "en": "The system must use MySQL database version 8.0 or higher.",
+        "es": "El sistema debe usar base de datos MySQL versión 8.0 o superior."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a technology constraint that specifies the required database platform and version.",
+        "es": "Es una restricción tecnológica que especifica la plataforma y versión de base de datos requerida."
+      },
+      "category": "Constraint",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_019",
+      "content": {
+        "en": "Users must be able to reset their passwords through email verification.",
+        "es": "Los usuarios deben poder restablecer sus contraseñas mediante verificación por email."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes a specific process the system must implement for password recovery.",
+        "es": "Es un requisito funcional porque describe un proceso específico que el sistema debe implementar para la recuperación de contraseñas."
+      },
+      "category": "Functional",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_020",
+      "content": {
+        "en": "The system must maintain 99.99% data integrity across all transactions.",
+        "es": "El sistema debe mantener 99.99% de integridad de datos en todas las transacciones."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional reliability requirement that specifies data quality standards the system must achieve.",
+        "es": "Es un requisito no-funcional de confiabilidad que especifica estándares de calidad de datos que el sistema debe lograr."
+      },
+      "category": "Non-Functional",
+      "difficulty": "hard"
+    },
+    {
+      "id": "req_021",
+      "content": {
+        "en": "Users must be able to create, edit, and delete customer profiles.",
+        "es": "Los usuarios deben poder crear, editar y eliminar perfiles de clientes."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes specific CRUD operations the system must provide.",
+        "es": "Es un requisito funcional porque describe operaciones CRUD específicas que el sistema debe proporcionar."
+      },
+      "category": "Functional",
+      "difficulty": "easy"
+    },
+    {
+      "id": "req_022",
+      "content": {
+        "en": "The system must be developed using Test-Driven Development (TDD) methodology.",
+        "es": "El sistema debe desarrollarse usando la metodología de Desarrollo Dirigido por Pruebas (TDD)."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a development process constraint that dictates the methodology to be used, not system behavior.",
+        "es": "Es una restricción de proceso de desarrollo que dicta la metodología a usar, no el comportamiento del sistema."
+      },
+      "category": "Constraint",
+      "difficulty": "hard"
+    },
+    {
+      "id": "req_023",
+      "content": {
+        "en": "All user actions must be logged for security audit purposes.",
+        "es": "Todas las acciones del usuario deben ser registradas para propósitos de auditoría de seguridad."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional security requirement that specifies logging capabilities for audit compliance.",
+        "es": "Es un requisito no-funcional de seguridad que especifica capacidades de registro para cumplimiento de auditoría."
+      },
+      "category": "Non-Functional",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_024",
+      "content": {
+        "en": "The system must generate invoices automatically when orders are completed.",
+        "es": "El sistema debe generar facturas automáticamente cuando se completan los pedidos."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes a specific business process the system must automate.",
+        "es": "Es un requisito funcional porque describe un proceso de negocio específico que el sistema debe automatizar."
+      },
+      "category": "Functional",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_025",
+      "content": {
+        "en": "The maximum project team size cannot exceed 8 developers.",
+        "es": "El tamaño máximo del equipo de proyecto no puede exceder 8 desarrolladores."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a resource constraint that limits the project team composition, not system functionality.",
+        "es": "Es una restricción de recursos que limita la composición del equipo de proyecto, no la funcionalidad del sistema."
+      },
+      "category": "Constraint",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_026",
+      "content": {
+        "en": "Page load times must not exceed 3 seconds on mobile devices.",
+        "es": "Los tiempos de carga de página no deben exceder 3 segundos en dispositivos móviles."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional performance requirement that specifies mobile responsiveness criteria.",
+        "es": "Es un requisito no-funcional de rendimiento que especifica criterios de capacidad de respuesta móvil."
+      },
+      "category": "Non-Functional",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_027",
+      "content": {
+        "en": "Users must be able to search products using voice commands.",
+        "es": "Los usuarios deben poder buscar productos usando comandos de voz."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes a specific input method the system must support.",
+        "es": "Es un requisito funcional porque describe un método de entrada específico que el sistema debe soportar."
+      },
+      "category": "Functional",
+      "difficulty": "hard"
+    },
+    {
+      "id": "req_028",
+      "content": {
+        "en": "All code must be reviewed by at least two senior developers before deployment.",
+        "es": "Todo el código debe ser revisado por al menos dos desarrolladores senior antes del despliegue."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a process constraint that establishes quality control procedures for development, not system behavior.",
+        "es": "Es una restricción de proceso que establece procedimientos de control de calidad para el desarrollo, no el comportamiento del sistema."
+      },
+      "category": "Constraint",
+      "difficulty": "hard"
+    },
+    {
+      "id": "req_029",
+      "content": {
+        "en": "The system must be accessible to users with visual impairments following WCAG 2.1 guidelines.",
+        "es": "El sistema debe ser accesible para usuarios con discapacidades visuales siguiendo las pautas WCAG 2.1."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional accessibility requirement that defines usability standards for disabled users.",
+        "es": "Es un requisito no-funcional de accesibilidad que define estándares de usabilidad para usuarios discapacitados."
+      },
+      "category": "Non-Functional",
+      "difficulty": "hard"
+    },
+    {
+      "id": "req_030",
+      "content": {
+        "en": "Users must receive real-time notifications when their orders change status.",
+        "es": "Los usuarios deben recibir notificaciones en tiempo real cuando sus pedidos cambien de estado."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes a specific notification behavior the system must implement.",
+        "es": "Es un requisito funcional porque describe un comportamiento específico de notificación que el sistema debe implementar."
+      },
+      "category": "Functional",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_031",
+      "content": {
+        "en": "The application must consume no more than 100MB of device storage.",
+        "es": "La aplicación no debe consumir más de 100MB de almacenamiento del dispositivo."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional resource requirement that specifies storage consumption limits.",
+        "es": "Es un requisito no-funcional de recursos que especifica límites de consumo de almacenamiento."
+      },
+      "category": "Non-Functional",
+      "difficulty": "medium"
+    },
+    {
+      "id": "req_032",
+      "content": {
+        "en": "The project must comply with GDPR data protection regulations.",
+        "es": "El proyecto debe cumplir con las regulaciones de protección de datos GDPR."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a legal constraint that establishes compliance requirements the project must meet.",
+        "es": "Es una restricción legal que establece requisitos de cumplimiento que el proyecto debe satisfacer."
+      },
+      "category": "Constraint",
+      "difficulty": "hard"
+    },
+    {
+      "id": "req_033",
+      "content": {
+        "en": "Users must be able to share products on social media platforms.",
+        "es": "Los usuarios deben poder compartir productos en plataformas de redes sociales."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "A",
+      "explanation": {
+        "en": "This is a functional requirement because it describes a specific sharing capability the system must provide.",
+        "es": "Es un requisito funcional porque describe una capacidad específica de compartir que el sistema debe proporcionar."
+      },
+      "category": "Functional",
+      "difficulty": "easy"
+    },
+    {
+      "id": "req_034",
+      "content": {
+        "en": "The system must maintain data consistency across all distributed components.",
+        "es": "El sistema debe mantener consistencia de datos en todos los componentes distribuidos."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "B",
+      "explanation": {
+        "en": "This is a non-functional reliability requirement that specifies data consistency standards for distributed systems.",
+        "es": "Es un requisito no-funcional de confiabilidad que especifica estándares de consistencia de datos para sistemas distribuidos."
+      },
+      "category": "Non-Functional",
+      "difficulty": "hard"
+    },
+    {
+      "id": "req_035",
+      "content": {
+        "en": "All third-party integrations must be approved by the security team before implementation.",
+        "es": "Todas las integraciones de terceros deben ser aprobadas por el equipo de seguridad antes de la implementación."
+      },
+      "options": {
+        "en": ["Functional", "Non-Functional", "Constraint", "Not a requirement"],
+        "es": ["Funcional", "No-Funcional", "Restricción", "No es un requisito"]
+      },
+      "correctOption": "C",
+      "explanation": {
+        "en": "This is a governance constraint that establishes approval processes for external dependencies.",
+        "es": "Es una restricción de gobernanza que establece procesos de aprobación para dependencias externas."
+      },
+      "category": "Constraint",
+      "difficulty": "hard"
+    }
+  ]
+}

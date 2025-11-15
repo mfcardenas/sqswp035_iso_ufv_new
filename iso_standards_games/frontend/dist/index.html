@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISO Standards Games</title>
+  <style>
+    /* CSS simple y limpio */
+    header { 
+      background-color: #2563eb; 
+    }
+    header h1, header button, header a { 
+      color: white; 
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/config.js"></script>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="bg-pattern">
+  <div id="app" class="min-h-screen flex flex-col">
+    <header class="bg-blue-600 text-white shadow-lg">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">ISO Standards Games</h1>
+        <div class="flex space-x-4 items-center">
+          <button id="lang-en" class="language-selector px-3 py-2 rounded bg-white bg-opacity-20 hover:bg-opacity-30 flex items-center text-white font-medium transition-all">
+            <img src="/assets/images/en_flag.svg" alt="English" class="w-6 h-4 mr-1"> EN
+          </button>
+          <button id="lang-es" class="language-selector px-3 py-2 rounded bg-white bg-opacity-20 hover:bg-opacity-30 flex items-center text-white font-medium transition-all">
+            <img src="/assets/images/es_flag.svg" alt="Español" class="w-6 h-4 mr-1"> ES
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+      <section id="welcome" class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4 text-blue-800">Welcome to ISO Standards Games</h2>
+        <p class="text-xl mb-6 text-gray-700">Interactive learning of ISO/IEC standards through gamification</p>
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-6 border-l-4 border-primary-500">
+          <div class="flex flex-col md:flex-row items-center mb-6">
+            <img src="/assets/images/dashboard.svg" alt="Dashboard" class="w-40 h-auto mb-4 md:mb-0 md:mr-6">
+            <div class="text-left">
+              <p class="mb-4 text-gray-700">
+                Learn about important software quality standards through engaging, interactive games:
+              </p>
+              <ul class="list-disc list-inside text-left mb-4 text-gray-700">
+                <li class="mb-2"><span class="font-semibold text-blue-700">ISO/IEC 25010</span> - Software Quality</li>
+                <li class="mb-2"><span class="font-semibold text-blue-700">ISO/IEC/IEEE 29148</span> - Requirements Engineering</li>
+                <li class="mb-2"><span class="font-semibold text-blue-700">ISO 9241</span> - Ergonomics of Human-System Interaction</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg-primary-50 p-4 rounded-lg border-l-4 border-secondary-500">
+            <p class="text-gray-800 italic">
+              "Standards are the foundation of quality software development. Through gamification, we make learning these essential standards engaging and effective."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="games" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- QualityQuest Game Card -->
+        <div class="game-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-4 border-blue-500">
+          <div class="bg-blue-600 text-white px-4 py-3 flex items-center">
+            <h3 class="text-xl font-bold text-white">QualityQuest</h3>
+            <span class="ml-auto bg-blue-400 text-white text-xs px-2 py-1 rounded-full">Active</span>
+          </div>
+          <div class="p-5">
+            <div class="flex justify-center mb-4">
+              <img src="/assets/images/quality_quest.svg" alt="QualityQuest" class="w-full h-auto">
+            </div>
+            <p class="mb-4 text-gray-700">
+              Identify the 8 quality attributes from ISO/IEC 25010 in various software scenarios.
+            </p>
+            <div class="flex items-center mb-3 text-gray-700">
+              <span class="text-sm font-medium">Difficulty:</span>
+              <div class="flex ml-2">
+                <span class="text-yellow-500">★</span>
+                <span class="text-gray-300">★★★★</span>
+              </div>
+            </div>
+            <a href="/games/quality-quest/" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+              Start Game
+            </a>
+          </div>
+        </div>
+
+        <!-- ReqRally Game Card -->
+        <div class="game-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-4 border-green-500">
+          <div class="bg-green-600 text-white px-4 py-3 flex items-center">
+            <h3 class="text-xl font-bold text-white">RequirementRally</h3>
+            <span class="ml-auto bg-green-400 text-white text-xs px-2 py-1 rounded-full">Active</span>
+          </div>
+          <div class="p-5">
+            <div class="flex justify-center mb-4">
+              <img src="/assets/images/requirement_rally.svg" alt="RequirementRally" class="w-full h-auto">
+            </div>
+            <p class="mb-4 text-gray-700">
+              Learn requirements specification principles from ISO/IEC/IEEE 29148.
+            </p>
+            <div class="flex items-center mb-3 text-gray-700">
+              <span class="text-sm font-medium">Difficulty:</span>
+              <div class="flex ml-2">
+                <span class="text-yellow-500">★★</span>
+                <span class="text-gray-300">★★★</span>
+              </div>
+            </div>
+            <a href="/requirement-rally" class="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+              Start Game
+            </a>
+          </div>
+        </div>
+
+        <!-- UsabilityUniverse Game Card -->
+        <div class="game-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-4 border-amber-500">
+          <div class="bg-amber-600 text-white px-4 py-3 flex items-center">
+            <h3 class="text-xl font-bold text-white">UsabilityUniverse</h3>
+            <span class="ml-auto bg-amber-400 text-white text-xs px-2 py-1 rounded-full">Active</span>
+          </div>
+          <div class="p-5">
+            <div class="flex justify-center mb-4">
+              <img src="/assets/images/usability_universe.svg" alt="UsabilityUniverse" class="w-full h-auto">
+            </div>
+            <p class="mb-4 text-gray-700">
+              Explore usability principles from ISO 9241 and improve user interfaces.
+            </p>
+            <div class="flex items-center mb-3 text-gray-700">
+              <span class="text-sm font-medium">Difficulty:</span>
+              <div class="flex ml-2">
+                <span class="text-yellow-500">★★★</span>
+                <span class="text-gray-300">★★</span>
+              </div>
+            </div>
+            <a href="/usability-universe" class="block w-full text-center bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+              Start Game
+            </a>
+          </div>
+        </div>
+        
+        <!-- StandardSafari Game Card (Coming Soon) -->
+        <div class="game-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-4 border-purple-500 opacity-85">
+          <div class="bg-purple-600 text-white px-4 py-3 flex items-center">
+            <h3 class="text-xl font-bold">StandardSafari</h3>
+            <span class="ml-auto bg-gray-500 text-white text-xs px-2 py-1 rounded-full">Coming Soon</span>
+          </div>
+          <div class="p-5">
+            <div class="flex justify-center mb-4">
+              <img src="/assets/images/standard_safari.svg" alt="StandardSafari" class="w-full h-auto">
+            </div>
+            <p class="mb-4 text-gray-700">
+              Explore multiple standards and their relationships in real-world scenarios.
+            </p>
+            <div class="flex items-center mb-3 text-gray-700">
+              <span class="text-sm font-medium">Difficulty:</span>
+              <div class="flex ml-2">
+                <span class="text-yellow-500">★★★★</span>
+                <span class="text-gray-300">★</span>
+              </div>
+            </div>
+            <button disabled class="block w-full text-center bg-gray-400 text-white font-medium py-3 px-4 rounded-lg cursor-not-allowed shadow-md">
+              Coming Soon
+            </button>
+          </div>
+        </div>
+        
+        <!-- FinalChallenge Game Card (Coming Soon) -->
+        <div class="game-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-4 border-green-500 opacity-85">
+          <div class="bg-green-600 text-white px-4 py-3 flex items-center">
+            <h3 class="text-xl font-bold">FinalChallenge</h3>
+            <span class="ml-auto bg-gray-500 text-white text-xs px-2 py-1 rounded-full">Coming Soon</span>
+          </div>
+          <div class="p-5">
+            <div class="flex justify-center mb-4">
+              <img src="/assets/images/final_challenge.svg" alt="FinalChallenge" class="w-full h-auto">
+            </div>
+            <p class="mb-4 text-gray-700">
+              Test your comprehensive knowledge of all ISO standards covered in previous games.
+            </p>
+            <div class="flex items-center mb-3 text-gray-700">
+              <span class="text-sm font-medium">Difficulty:</span>
+              <div class="flex ml-2">
+                <span class="text-yellow-500">★★★★★</span>
+                <span class="text-gray-300"></span>
+              </div>
+            </div>
+            <button disabled class="block w-full text-center bg-gray-400 text-white font-medium py-3 px-4 rounded-lg cursor-not-allowed shadow-md">
+              Coming Soon
+            </button>
+          </div>
+        </div>
+        
+        <!-- Stats Card -->
+        <div class="game-card bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg shadow-lg overflow-hidden text-white">
+          <div class="p-5">
+            <h3 class="text-xl font-bold mb-4 border-b border-white pb-2">Your Progress</h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span>Active Games</span>
+                  <span>3/5</span>
+                </div>
+                <div class="w-full bg-white bg-opacity-30 rounded-full h-2.5">
+                  <div class="bg-white h-2.5 rounded-full" style="width: 60%"></div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span>Total Points</span>
+                  <span>0</span>
+                </div>
+                <div class="flex items-center mt-2">
+                  <img src="/assets/images/timer.svg" alt="Timer" class="w-8 h-8 mr-2">
+                  <span>Start playing to track your progress!</span>
+                </div>
+              </div>
+              
+              <a href="#welcome" class="block w-full text-center bg-white text-primary-600 font-medium py-3 px-4 rounded-lg transition duration-300 shadow-md hover:shadow-lg mt-4">
+                View Dashboard
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-lg font-bold text-primary-400 mb-2">ISO Standards Games</h3>
+            <p class="text-sm text-neutral-200">&copy; 2025 ISO Standards Games - Educational Project</p>
+          </div>
+          <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <a href="#" class="text-neutral-100 hover:text-primary-300 transition">About</a>
+            <a href="#" class="text-neutral-100 hover:text-primary-300 transition">Help</a>
+            <a href="#" class="text-neutral-100 hover:text-primary-300 transition">Privacy</a>
+            <a href="#" class="text-neutral-100 hover:text-primary-300 transition">Contact</a>
+          </div>
+        </div>
+        <div class="mt-4 pt-4 border-t border-gray-700 text-center text-sm">
+          <p class="text-neutral-200">This project is designed for educational purposes to help students learn about ISO/IEC standards.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Language selector modal -->
+  <div id="language-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg p-6 max-w-md w-full">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold text-blue-700">Select Language</h2>
+        <button id="close-lang-modal" class="text-gray-700 hover:text-gray-900">
+          <img src="/assets/images/close.svg" alt="Close" class="w-6 h-6">
+        </button>
+      </div>
+      <div class="space-y-4">
+        <button class="lang-option flex items-center w-full p-3 rounded-lg border hover:bg-primary-50 transition" data-lang="en">
+          <img src="/assets/images/en_flag.svg" alt="English" class="w-10 h-6 mr-4">
+          <div class="text-left">
+            <p class="font-medium text-gray-900">English</p>
+            <p class="text-sm text-gray-700">English language version</p>
+          </div>
+        </button>
+        <button class="lang-option flex items-center w-full p-3 rounded-lg border hover:bg-primary-50 transition" data-lang="es">
+          <img src="/assets/images/es_flag.svg" alt="Español" class="w-10 h-6 mr-4">
+          <div class="text-left">
+            <p class="font-medium text-gray-900">Español</p>
+            <p class="text-sm text-gray-700">Versión en español</p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/main.js"></script>
+</body>
+</html>

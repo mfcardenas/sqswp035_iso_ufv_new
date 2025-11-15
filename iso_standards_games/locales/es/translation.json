@@ -1,0 +1,65 @@
+{
+  "app": {
+    "title": "Juegos de Estándares ISO",
+    "description": "Juegos educativos interactivos para aprender estándares ISO"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "submit": "Enviar",
+    "start": "Iniciar Juego",
+    "continue": "Continuar",
+    "finish": "Finalizar",
+    "points": "Puntos",
+    "correct": "¡Correcto!",
+    "incorrect": "Incorrecto",
+    "try_again": "Intentar de nuevo",
+    "game_over": "Fin del Juego",
+    "congratulations": "¡Felicidades!",
+    "score": "Puntuación",
+    "total_score": "Puntuación Total",
+    "badges_earned": "Insignias Ganadas",
+    "progress": "Progreso",
+    "select_answer": "Selecciona tu respuesta",
+    "selected": "Seleccionado",
+    "difficulty": "Dificultad"
+  },
+  "nav": {
+    "home": "Inicio",
+    "games": "Juegos",
+    "profile": "Perfil",
+    "settings": "Configuración",
+    "logout": "Cerrar Sesión",
+    "login": "Iniciar Sesión"
+  },
+  "games": {
+    "available_games": "Juegos Disponibles",
+    "start_game": "Iniciar Juego",
+    "game_info": "Información del Juego",
+    "objectives": "Objetivos de Aprendizaje",
+    "standards": "Estándares Cubiertos",
+    "duration": "Duración Estimada",
+    "minutes": "minutos"
+  },
+  "quality_quest": {
+    "title": "QualityQuest: El Desafío de la Calidad",
+    "description": "Conviértete en Consultor de Calidad y aprende a identificar los 8 atributos de calidad del ISO/IEC 25010 en varios escenarios de software.",
+    "intro": "En QualityQuest, analizarás diferentes escenarios de software e identificarás qué atributo de calidad del ISO/IEC 25010 es más relevante.",
+    "scenario_prefix": "Escenario:",
+    "select_attribute": "¿Qué atributo de calidad es más relevante en este escenario?",
+    "feedback_correct": "¡Buen trabajo! Has identificado correctamente el atributo de calidad.",
+    "feedback_incorrect": "No exactamente. Aprendamos más sobre este atributo de calidad.",
+    "attributes": {
+      "functional_suitability": "Adecuación Funcional",
+      "performance_efficiency": "Eficiencia de Desempeño",
+      "compatibility": "Compatibilidad",
+      "usability": "Usabilidad",
+      "reliability": "Fiabilidad",
+      "security": "Seguridad",
+      "maintainability": "Mantenibilidad",
+      "portability": "Portabilidad"
+    }
+  }
+}

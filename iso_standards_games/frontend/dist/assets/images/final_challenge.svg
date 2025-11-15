@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <rect width="300" height="200" rx="20" fill="#f9fcf0" stroke="#2ecc71" stroke-width="4"/>
+  <g transform="translate(50, 50)">
+    <path d="M30,0 L170,0 C185,0 200,15 200,30 L200,80 C200,95 185,110 170,110 L30,110 C15,110 0,95 0,80 L0,30 C0,15 15,0 30,0 Z" fill="#2ecc71" opacity="0.1"/>
+    <text x="100" y="45" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#2c3e50">FinalChallenge</text>
+    <text x="100" y="75" font-family="Arial" font-size="14" text-anchor="middle" fill="#7f8c8d">Comprehensive Test</text>
+    <polygon points="30,35 50,55 30,75" fill="#2ecc71" opacity="0.7"/>
+    <polygon points="170,35 150,55 170,75" fill="#2ecc71" opacity="0.7"/>
+    <rect x="70" y="45" width="60" height="20" rx="10" fill="#2ecc71" opacity="0.7"/>
+  </g>
+</svg>

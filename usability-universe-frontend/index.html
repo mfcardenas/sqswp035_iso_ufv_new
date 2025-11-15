@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UsabilityUniverse - Interface Usability Game</title>
+  <style>
+    /* CSS específico para UsabilityUniverse */
+    header { 
+      background-color: #7c3aed; /* Morado para diferenciarse de otros juegos */
+    }
+    header h1, header button, header a { 
+      color: white; 
+    }
+    .usability-learnability { border-color: #10b981; }
+    .usability-efficiency { border-color: #3b82f6; }
+    .usability-memorability { border-color: #8b5cf6; }
+    .usability-error-prevention { border-color: #f59e0b; }
+    .usability-user-satisfaction { border-color: #ef4444; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <div id="app" class="min-h-screen flex flex-col">
+    <header class="bg-violet-600 text-white shadow-lg">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+          <div class="bg-white p-2 rounded-lg mr-3">
+            <svg class="h-8 w-8 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h1 class="text-2xl font-bold text-white" data-translate="title">UsabilityUniverse</h1>
+        </div>
+        <div class="flex space-x-4 items-center">
+          <button id="lang-en" class="language-selector px-3 py-2 rounded bg-white bg-opacity-30 hover:bg-opacity-40 flex items-center text-white font-medium transition-all">
+            🇺🇸 EN
+          </button>
+          <button id="lang-es" class="language-selector px-3 py-2 rounded bg-white bg-opacity-20 hover:bg-opacity-30 flex items-center text-white font-medium transition-all">
+            🇪🇸 ES
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+      <a href="/" class="inline-flex items-center bg-white px-4 py-2 rounded-lg shadow-sm text-violet-700 hover:bg-violet-50 transition-all mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+        <span data-translate="backToGames">Back to Games</span>
+      </a>
+      
+      <div class="mb-8 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4" data-translate="welcome">Welcome to UsabilityUniverse!</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-translate="description">Learn to identify usability principles in real interface scenarios</p>
+      </div>
+
+      <!-- Game Introduction Screen -->
+      <div id="intro-screen" class="max-w-6xl mx-auto">
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <div class="text-center mb-8">
+            <h3 class="text-3xl font-bold text-violet-700 mb-4" data-translate="gameDescription">In this game you will analyze different interface scenarios and determine which usability principle applies.</h3>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <!-- Usability Principles -->
+            <div class="bg-violet-50 p-6 rounded-xl">
+              <h4 class="font-bold text-lg mb-4 text-violet-800 flex items-center" data-translate="usabilityPrinciples">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                Usability Principles
+              </h4>
+              <div class="space-y-3">
+                <div class="bg-white p-3 rounded-lg shadow-sm border-l-4 border-green-400">
+                  <div class="font-bold text-green-700" data-translate="learnability">Learnability</div>
+                  <p class="text-sm text-gray-700" data-translate="learnabilityDesc">How easily users can learn to use the interface</p>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border-l-4 border-blue-400">
+                  <div class="font-bold text-blue-700" data-translate="efficiency">Efficiency</div>
+                  <p class="text-sm text-gray-700" data-translate="efficiencyDesc">How quickly users can perform tasks once they learn</p>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border-l-4 border-purple-400">
+                  <div class="font-bold text-purple-700" data-translate="memorability">Memorability</div>
+                  <p class="text-sm text-gray-700" data-translate="memorabilityDesc">How easily users can remember how to use the interface</p>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border-l-4 border-amber-400">
+                  <div class="font-bold text-amber-700" data-translate="errorPrevention">Error Prevention</div>
+                  <p class="text-sm text-gray-700" data-translate="errorPreventionDesc">How well the interface prevents user errors</p>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border-l-4 border-red-400">
+                  <div class="font-bold text-red-700" data-translate="userSatisfaction">User Satisfaction</div>
+                  <p class="text-sm text-gray-700" data-translate="userSatisfactionDesc">How pleasant and satisfying the interface is to use</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- How to Play -->
+            <div class="bg-green-50 p-6 rounded-xl shadow-sm border border-green-200">
+              <h4 class="font-bold text-lg mb-3 text-green-800 flex items-center" data-translate="howToPlay">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                How to Play
+              </h4>
+              <div class="space-y-3">
+                <div class="flex items-start">
+                  <div class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">1</div>
+                  <p class="text-gray-800" data-translate="step1">Read each interface scenario carefully</p>
+                </div>
+                <div class="flex items-start">
+                  <div class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">2</div>
+                  <p class="text-gray-800" data-translate="step2">Identify which usability principle is most relevant</p>
+                </div>
+                <div class="flex items-start">
+                  <div class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">3</div>
+                  <p class="text-gray-800" data-translate="step3">Submit your answer and learn from the explanation</p>
+                </div>
+                <div class="flex items-start">
+                  <div class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5 mr-3">4</div>
+                  <p class="text-gray-800" data-translate="step4">Gain points for correct answers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Settings -->
+          <div class="bg-gray-50 p-6 rounded-xl mb-8">
+            <h4 class="font-bold text-lg mb-4 text-gray-800" data-translate="gameSettings">Game Settings</h4>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-translate="playerName">Player Name</label>
+                <input type="text" id="player-name" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-violet-500" data-translate-placeholder="playerNamePlaceholder" placeholder="Your name">
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-translate="category">Category</label>
+                <select id="category-select" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-violet-500">
+                  <option value="" data-translate="allPrinciples">All Principles</option>
+                  <option value="Learnability" data-translate="onlyLearnability">Only Learnability</option>
+                  <option value="Efficiency" data-translate="onlyEfficiency">Only Efficiency</option>
+                  <option value="Memorability" data-translate="onlyMemorability">Only Memorability</option>
+                  <option value="Error_Prevention" data-translate="onlyErrorPrevention">Only Error Prevention</option>
+                  <option value="User_Satisfaction" data-translate="onlyUserSatisfaction">Only User Satisfaction</option>
+                </select>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-translate="difficulty">Difficulty</label>
+                <select id="difficulty-select" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-violet-500">
+                  <option value="" data-translate="allLevels">All Levels</option>
+                  <option value="easy" data-translate="easy">Easy</option>
+                  <option value="medium" data-translate="medium">Medium</option>
+                  <option value="hard" data-translate="hard">Hard</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Player Info Section -->
+          <div id="player-info" class="bg-violet-50 p-4 rounded-lg mb-6 hidden">
+            <div class="flex items-center">
+              <div class="bg-violet-600 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-medium text-violet-800"><span data-translate="player">Player</span>: <span id="display-player-name">-</span></p>
+                <p class="text-sm text-violet-600"><span data-translate="points">Points</span>: <span id="display-score">0</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button id="start-game" class="bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-8 rounded-xl transition duration-300 shadow-lg">
+              <span data-translate="startGame">Start Game</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Screen -->
+      <div id="game-screen" class="max-w-4xl mx-auto hidden">
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold text-gray-800">
+              <span data-translate="scenario">Scenario</span> <span id="scenario-number">1</span>/5
+            </h3>
+            <div class="text-right">
+              <p class="text-lg font-semibold text-violet-600"><span data-translate="points">Points</span>: <span id="score">0</span></p>
+            </div>
+          </div>
+
+          <div id="scenario-content" class="bg-gray-50 p-6 rounded-lg mb-6">
+            <p id="scenario-text" class="text-lg text-gray-800">Loading scenario...</p>
+          </div>
+
+          <div class="mb-6">
+            <h4 class="text-lg font-semibold text-gray-800 mb-4" data-translate="questionType">Which usability principle is most relevant?</h4>
+            <div class="grid grid-cols-1 gap-3">
+              <button class="option-button bg-white border-2 border-gray-200 hover:border-violet-400 rounded-lg p-4 text-left transition-all" data-option="Learnability">
+                <div class="flex items-center">
+                  <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">L</div>
+                  <span data-translate="learnability">Learnability</span>
+                </div>
+              </button>
+              <button class="option-button bg-white border-2 border-gray-200 hover:border-violet-400 rounded-lg p-4 text-left transition-all" data-option="Efficiency">
+                <div class="flex items-center">
+                  <div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">E</div>
+                  <span data-translate="efficiency">Efficiency</span>
+                </div>
+              </button>
+              <button class="option-button bg-white border-2 border-gray-200 hover:border-violet-400 rounded-lg p-4 text-left transition-all" data-option="Memorability">
+                <div class="flex items-center">
+                  <div class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">M</div>
+                  <span data-translate="memorability">Memorability</span>
+                </div>
+              </button>
+              <button class="option-button bg-white border-2 border-gray-200 hover:border-violet-400 rounded-lg p-4 text-left transition-all" data-option="Error_Prevention">
+                <div class="flex items-center">
+                  <div class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">P</div>
+                  <span data-translate="errorPrevention">Error Prevention</span>
+                </div>
+              </button>
+              <button class="option-button bg-white border-2 border-gray-200 hover:border-violet-400 rounded-lg p-4 text-left transition-all" data-option="User_Satisfaction">
+                <div class="flex items-center">
+                  <div class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-bold">S</div>
+                  <span data-translate="userSatisfaction">User Satisfaction</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button id="submit-answer" class="bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>
+              <span data-translate="submit">Submit Answer</span>
+            </button>
+          </div>
+
+          <!-- Feedback Section -->
+          <div id="feedback" class="mt-6 hidden">
+            <div id="feedback-content" class="p-4 rounded-lg">
+              <!-- Feedback will be inserted here -->
+            </div>
+            <div class="text-center mt-4">
+              <button id="continue-game" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                <span data-translate="continue">Continue</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="results-screen" class="max-w-4xl mx-auto hidden">
+        <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+          <h3 class="text-3xl font-bold text-violet-700 mb-4" data-translate="gameCompleted">Game Completed!</h3>
+          <div class="bg-violet-50 p-6 rounded-lg mb-6">
+            <p class="text-xl text-violet-800 mb-2" data-translate="finalScore">Final Score</p>
+            <p id="final-score" class="text-4xl font-bold text-violet-600">0</p>
+            <p class="text-gray-600 mt-2">out of 50 points</p>
+          </div>
+          <button id="play-again" class="bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-8 rounded-xl transition duration-300 shadow-lg">
+            <span data-translate="playAgain">Play Again</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Load the game JavaScript -->
+  <script src="usability-universe.js"></script>
+</body>
+</html>

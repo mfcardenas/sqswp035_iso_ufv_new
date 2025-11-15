@@ -1,0 +1,65 @@
+{
+  "app": {
+    "title": "ISO Standards Games",
+    "description": "Interactive educational games for learning ISO standards"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "start": "Start Game",
+    "continue": "Continue",
+    "finish": "Finish",
+    "points": "Points",
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "try_again": "Try Again",
+    "game_over": "Game Over",
+    "congratulations": "Congratulations!",
+    "score": "Score",
+    "total_score": "Total Score",
+    "badges_earned": "Badges Earned",
+    "progress": "Progress",
+    "select_answer": "Select your answer",
+    "selected": "Selected",
+    "difficulty": "Difficulty"
+  },
+  "nav": {
+    "home": "Home",
+    "games": "Games",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "login": "Login"
+  },
+  "games": {
+    "available_games": "Available Games",
+    "start_game": "Start Game",
+    "game_info": "Game Information",
+    "objectives": "Learning Objectives",
+    "standards": "Standards Covered",
+    "duration": "Estimated Duration",
+    "minutes": "minutes"
+  },
+  "quality_quest": {
+    "title": "QualityQuest: The Quality Challenge",
+    "description": "Become a Quality Consultant and learn to identify the 8 quality attributes from ISO/IEC 25010 in various software scenarios.",
+    "intro": "In QualityQuest, you'll analyze different software scenarios and identify which quality attribute from ISO/IEC 25010 is most relevant.",
+    "scenario_prefix": "Scenario:",
+    "select_attribute": "Which quality attribute is most relevant in this scenario?",
+    "feedback_correct": "Great job! You correctly identified the quality attribute.",
+    "feedback_incorrect": "Not quite. Let's learn more about this quality attribute.",
+    "attributes": {
+      "functional_suitability": "Functional Suitability",
+      "performance_efficiency": "Performance Efficiency",
+      "compatibility": "Compatibility",
+      "usability": "Usability",
+      "reliability": "Reliability",
+      "security": "Security",
+      "maintainability": "Maintainability",
+      "portability": "Portability"
+    }
+  }
+}
